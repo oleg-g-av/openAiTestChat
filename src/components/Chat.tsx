@@ -30,7 +30,7 @@ const Chat: React.FC = () => {
     setInput("");
     setIsWaiting(true);
 
-    await fetch("http://localhost:3000/api/botQuestion", {
+    await fetch("https://mind-ai-user-cnc74tdrl-mind-ai.vercel.app/api/botQuestion", {
       method: "POST",
       body: JSON.stringify({
         message: input,
@@ -51,7 +51,7 @@ const Chat: React.FC = () => {
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const response = await fetch("http://localhost:3000/api/botQuestion", {
+      const response = await fetch("https://mind-ai-user-cnc74tdrl-mind-ai.vercel.app/api/botQuestion", {
         method: "POST",
         body: JSON.stringify({
           message: input,
