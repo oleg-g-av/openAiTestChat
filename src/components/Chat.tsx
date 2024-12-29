@@ -67,7 +67,7 @@ const Chat: React.FC = () => {
     };
     
     fetchMessages();
-  }, []);
+  }, [input]);
 
   return (
     <Container>
